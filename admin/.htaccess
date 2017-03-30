@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "SACS"
+AuthUserFile "/home/smarxjyq/.htpasswds/public_html/sacs/passwd"
+require valid-user

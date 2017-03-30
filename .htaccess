@@ -1,0 +1,7 @@
+<Files "*.json">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+RewriteEngine On
+RewriteRule   ^api/([A-Za-z0-9-]+)/?$  api.php?token=$1  [NC,L]  # Handle requests for "api.php"
