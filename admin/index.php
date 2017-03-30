@@ -50,9 +50,17 @@
                     </tr>    
                 </tbody>
                 </table>
-                <input data-bind="value: newName" placeholder="Name" />
-                <input data-bind="value: newEmail" placeholder="Email" />
-                <button data-bind="click: addUser">Add user</button>
+                <div class="col-lg-6 pull-right">
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" data-bind="value: newName" placeholder="Name" />
+                    </div>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" data-bind="value: newEmail" placeholder="Email" />
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn" data-bind="click: addUser">Add user</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="navbar navbar-fixed-bottom">
