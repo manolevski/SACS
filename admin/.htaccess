@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "SACS"
-AuthUserFile "/path/to/password/file"
-require valid-user
