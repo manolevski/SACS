@@ -138,4 +138,5 @@ public class User
 	public string email;
 	public string token;
 	public bool allow;
+	public int timestamp;
 }

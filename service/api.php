@@ -9,6 +9,7 @@ $json = json_decode($string, true); // decode the JSON into an associative array
 
 foreach ($json as $field) {
 	if($field['token'] == $token){
+		$field['timestamp'] = time();
 		$text = json_encode($field);
 		$block = mcrypt_get_block_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_CBC);
 		$padding = $block - (strlen($text) % $block);
