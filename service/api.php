@@ -1,7 +1,7 @@
 <?php
  
 $token= $_GET['token']; 
-$key = 'SuperSecretKey13';
+$key = 'SuperSecretKey13'; //Only keys of sizes 16, 24 or 32 supported
 $iv = "45287112549354892144548565456541";
 
 $string = file_get_contents("user_data.json");
